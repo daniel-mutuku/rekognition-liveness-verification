@@ -1,0 +1,39 @@
+.figure {
+  margin: 0;
+  min-width: 0;
+}
+
+.frame {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 35%;
+  border-radius: var(--radius);
+  background: var(--mist);
+  /* outline, not inset box-shadow: it paints over the image. */
+  outline: 1px solid rgb(27 38 50 / 0.1);
+  outline-offset: -1px;
+}
+
+.empty {
+  display: grid;
+  place-items: center;
+  padding: var(--space-3);
+  color: var(--slate);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  text-align: center;
+}
+
+.dimmed {
+  filter: grayscale(0.8);
+  opacity: 0.6;
+}
+
+.caption {
+  margin-top: var(--space-2);
+  color: var(--slate);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+}

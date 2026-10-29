@@ -1,0 +1,49 @@
+# --- Go ---
+# Compiled binaries go to build/ (see Makefile).
+/build/
+*.exe
+*.test
+*.out
+coverage.*
+
+# --- Secrets / local config ---
+# .env holds your real bucket/table names and AWS profile. .env.example is committed.
+.env
+.env.*
+!.env.example
+web/.env
+web/.env.*
+!web/.env.example
+
+# --- Face photos (biometric data) ---
+testdata/*.jpg
+testdata/*.jpeg
+testdata/*.png
+
+# --- Terraform ---
+# State can contain resource IDs and, for some resources, secrets in plain text.
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+tfplan
+crash.log
+crash.*.log
+# tfvars holds your profile/suffix; the .example is committed.
+*.tfvars
+!*.tfvars.example
+# .terraform.lock.hcl is intentionally NOT ignored: commit it so everyone gets
+# the same provider versions.
+
+# --- Frontend ---
+node_modules/
+web/dist/
+
+# --- Logs ---
+*.log
+
+# --- Editors / OS ---
+.idea/
+.vscode/
+*.swp
+.DS_Store

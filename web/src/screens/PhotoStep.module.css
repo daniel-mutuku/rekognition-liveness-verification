@@ -1,0 +1,34 @@
+.slot {
+  width: min(240px, 100%);
+}
+
+.empty {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 4 / 5;
+  padding: var(--space-4);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--mist);
+  color: var(--slate);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+  text-align: center;
+}
+
+.dragging .empty {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.rejectedTitle {
+  color: var(--brick);
+}
+
+.reasons {
+  padding-left: 1.2em;
+}
+
+.reasons li + li {
+  margin-top: var(--space-2);
+}

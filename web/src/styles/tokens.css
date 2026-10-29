@@ -1,0 +1,55 @@
+:root {
+  --mist: #edf1f4;
+  --paper: #ffffff;
+  --ink: #1b2632;
+  --slate: #4d5b6a;
+  --persimmon: #b8461b;
+  --persimmon-hover: #9a3a16;
+  --persimmon-active: #7c2f12;
+  --persimmon-tint: #f8e9e3;
+  --moss: #2e6b4e;
+  --ochre: #875a0b;
+  --brick: #9e3a47;
+  --line: #c9d2da;
+  --track: #dce3e9;
+  --font-body: "Atkinson Hyperlegible Next", system-ui, sans-serif;
+  --font-heading: var(--font-body);
+  --text-sm: 0.875rem;
+  --text-base: 1.0625rem;
+  --text-md: 1.25rem;
+  --text-lg: 1.5rem;
+  --text-xl: 1.8125rem;
+  --text-2xl: 2.1875rem;
+  --leading-sm: 1.45;
+  --leading-body: 1.55;
+  --leading-heading: 1.15;
+  --measure: 62ch;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --gutter: var(--space-4);
+  --panel: 480px;
+  --panel-padding: var(--space-8);
+  --radius: 8px;
+  --radius-panel: 12px;
+  --focus-ring: 3px solid var(--persimmon);
+  --focus-offset: 2px;
+  --ease-out: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --duration-fill: 600ms;
+}
+
+@media (max-width: 519px) {
+  :root {
+    --panel-padding: var(--gutter);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fill: 0ms;
+  }
+}

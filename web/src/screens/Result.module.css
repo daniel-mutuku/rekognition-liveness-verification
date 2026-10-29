@@ -1,0 +1,107 @@
+.moss {
+  color: var(--moss);
+}
+.ochre {
+  color: var(--ochre);
+}
+.brick {
+  color: var(--brick);
+}
+
+.verdict {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.icon {
+  flex: none;
+  font-size: 1.1em;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.scores {
+  margin-bottom: 0;
+  border-top: 1px solid var(--line);
+}
+
+.score {
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.scoreRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: var(--space-2);
+}
+
+.scoreLabel {
+  font-weight: 700;
+}
+
+.scoreValue {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: baseline;
+  column-gap: var(--space-2);
+  margin: var(--space-1) 0 0;
+}
+
+.number {
+  font-size: var(--text-md);
+  font-weight: 700;
+}
+
+.track {
+  grid-column: 1 / -1;
+  position: relative;
+  display: block;
+  height: 6px;
+  margin-top: var(--space-2);
+  border-radius: 3px;
+  background: var(--track);
+}
+
+.fill {
+  display: block;
+  height: 100%;
+  border-radius: 3px;
+  background: var(--ink);
+  transform-origin: left;
+  transform: scaleX(var(--score));
+  animation: fill var(--duration-fill) var(--ease-out) both;
+}
+
+.failed {
+  background: var(--brick);
+}
+
+@keyframes fill {
+  from {
+    transform: scaleX(0);
+  }
+}
+
+.mark {
+  position: absolute;
+  top: -3px;
+  bottom: -3px;
+  width: 2px;
+  margin-left: -1px;
+  background: var(--ink);
+}
+
+.reasons {
+  padding-left: 1.2em;
+}
+
+.reasons li + li {
+  margin-top: var(--space-2);
+}

@@ -1,0 +1,22 @@
+.steps {
+  padding-left: 1.4em;
+}
+
+.steps li + li {
+  margin-top: var(--space-2);
+}
+
+.warning {
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius);
+  background: var(--mist);
+  font-size: var(--text-sm);
+  line-height: var(--leading-sm);
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--slate);
+}

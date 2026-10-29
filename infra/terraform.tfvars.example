@@ -1,0 +1,11 @@
+# Copy to terraform.tfvars (git-ignored) and edit.
+
+profile       = "default"     # the AWS CLI profile you deploy with
+region        = "eu-west-1"   # must be a Face Liveness region
+bucket_suffix = "dm-2026"     # anything that makes the bucket name globally unique
+
+# Vite dev server and `make demo`.
+allowed_origins = ["http://localhost:5173", "http://localhost:8080"]
+
+# How long photos, liveness images and records are kept.
+retention_days = 7
